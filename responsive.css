@@ -1,0 +1,17 @@
+@media screen and (max-width:370px){
+    .image{
+        position: absolute;
+        top: 180vw;
+        width: 95vw;
+        /* border: 2px solid white; */
+    }
+
+    .statement-1{
+        top: 44vw;
+    }
+
+    .statement-2{
+        top: 245vw;
+    }
+    
+}
