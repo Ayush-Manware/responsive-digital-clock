@@ -32,7 +32,7 @@ html{
 
 .main-container{
     /* border: 1px solid white; */
-    padding: 0px 5px;
+    padding: 0px 8px;
 }
 
 .logo-div{
@@ -73,7 +73,13 @@ html{
     border: 1px solid white;
     padding: 2%;
     background: var(--white);
+    transition: all 0.2s linear;
 }
+
+/* .clockDiv:hover{
+    transform: translate(0px, -4px);
+    background-color: red;
+} */
 
 .clockDiv div{
     /* border: 1px solid white; */
@@ -89,10 +95,15 @@ html{
     letter-spacing: 1px;
 }
 
+.hour:hover{
+    transform: translate(0px, -4px);
+}
+
 .hour{
     background-color: var(--time-box-background);
     padding: 5px;
     color: var(--time-text-up);
+    transition: all 0.2s linear;
 }
 
 .minute{
@@ -130,7 +141,7 @@ html{
     opacity: 0.3;
     z-index: -2;
     position: absolute;
-    top: 70%;
+    top: 69%;
     right: 8%;
     padding: 2.5%;
     width: 75vw;
@@ -224,7 +235,7 @@ option{
 
 .image{
     position: absolute;
-    top: 175vw;
+    top: 172vw;
     width: 95vw;
     /* border: 2px solid white; */
 }
@@ -244,40 +255,84 @@ option{
     font-size: 6vw;
     font-weight: bold;
     font-family: 'Ysabeau Infant', sans-serif;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: 1s; */
+    animation-duration: 2s;
 }
-:root{
-    --background: #3D087B;
-    --white: #FFFFFF;
-    --border: #dbd8d8; 
-    --time-box-background: #F6E2FF;
-    --time-text-up: #8A11BF;
-    --time-text-down: #5F0089;
-    --statement-text: #8E53F0;
-    --input-option: #3D087BDE;
-    --pink: #F25CFE;
-    --gradient1: #6E54EC;
-    --gradient2: #CB52F8;
-    --gradient3: #FC5EFF;
+
+.statement-2 .blink{
+ 
 }
+
+@keyframes wave{
+    0% {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+    100%{
+        color: transparent; 
+    }
+  }
+
 .set-time{
-    backdrop-filter: blur(10px);
-    background-image: linear-gradient(140deg,transparent,#4629d7,transparent);
-    /* background-color: transparent; */
     /* border: 1px solid rgb(239, 239, 239); */
-    border-top: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+    /* border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white); */
     position: absolute;
-    top: 262vw;
+    top: 258vw;
     width: 95vw;
     padding: 1vw 0vw;
 }
 
 .set-time p{
     padding: 1vw;
+    margin: 3px 0px;
     text-align: center;
     color: white;
     /* color: var(--gradient1); */
     /* font-weight: 100; */
     font-family: 'Ysabeau Infant', sans-serif;
+    backdrop-filter: blur(10px);
+    border: 1px solid whitesmoke;
+    transition: all 0.1s linear; 
+}
+
+.set-time p:hover{
+    background-color: rgba(255, 255, 255, 0.211);
+    /* color: var(--background); */
+    letter-spacing: 2px;
+    font-size: 3vw;
+    /* transform: scale(1.2); */
+}
+
+.set-alarm-button{
+    width: 95vw;
+    position: absolute;
+    top: 298vw;
+    padding: 10px; 
+    border-radius: 2px;
+    border: 2px solid transparent; 
+    color: rgba(255, 255, 255, 0.873);
+    font-size: 5vw;
+    /* background-image: linear-gradient(90%,red,violet); */
+    background-image: linear-gradient(90deg, #6E54EC, rgba(232, 26, 255, 0.871));
+    transition: all 0.2s linear;
+    letter-spacing: 1px;
+}
+
+.set-alarm-button:hover{
+    background-image: linear-gradient(90deg, #5b3eee, rgba(219, 19, 242, 0.871));
+    letter-spacing: 2px;
+}
+
+.set-alarm-button span{
+    display: none;
+}
+
+.set-alarm-button:hover span{
+    display: inline-block; 
 }
 
