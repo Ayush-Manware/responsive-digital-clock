@@ -1,14 +1,12 @@
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Slab&family=Ysabeau+Infant&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Pacifico&family=Playfair+Display:wght@500&family=Roboto+Slab&family=Ysabeau+Infant&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
-    /* border: 1px solid white; */
     border-radius: 5px;
     font-family: 'Roboto Slab', serif;
-    /* border: 1px solid white; */
 }
 
 :root{
@@ -31,19 +29,16 @@ html{
 }
 
 .main-container{
-    /* border: 1px solid white; */
     padding: 0px 8px;
 }
 
 .logo-div{
-   /* backdrop-filter: blur(10px); */
    background-color: var(--background);
    padding: 0vw 2vw;
    width: 94vw;
     z-index: 3;
     position: sticky;
     top: 0px;
-    /* border: 2px solid white; */
 }
 
 .logo{
@@ -61,7 +56,6 @@ html{
 
 .shadowDiv-main{
     position: relative;
-    /* border: 1px solid rgb(255, 0, 0); */
     top: 0%;
     width: 95vw;
 }
@@ -69,20 +63,13 @@ html{
 .clockDiv{
     display: flex;
     justify-content: center;
-    /* background: var(--white); */
     border: 1px solid white;
     padding: 2%;
     background: var(--white);
     transition: all 0.2s linear;
 }
 
-/* .clockDiv:hover{
-    transform: translate(0px, -4px);
-    background-color: red;
-} */
-
 .clockDiv div{
-    /* border: 1px solid white; */
     margin: 0px 5px;
     text-align: center;
     display: flex;
@@ -156,10 +143,7 @@ html{
     position: absolute;
     font-size: 6vw;
     top: 42vw;
-    /* font-weight: bold; */
-    /* font-family: 'Caprasimo', cursive; */
     font-family: 'Pacifico', cursive;
-    /* font-family: 'Ysabeau Infant', sans-serif; */
 }
 
 .set-time-container{
@@ -194,38 +178,32 @@ select{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
+select:focus{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.159);
+}
+
 option{
-    /* background-color: rgb(134, 207, 223); */
     color: var(--background);
     transition: all 0.1s linear;
     font-family: 'Ysabeau Infant', sans-serif;
     font-weight: 100;
-    /* border:1ps solid red; */
+    text-align: center;
 }
 
 .wake-up-line{
     text-align: center;
     color: rgba(128, 128, 128, 0.927);
     display: none;
-    /* font-size: 10vw; */
-    /* font-weight: 900px; */
-    /* padding: 0px 25px; */
-    /* border: 1px solid black; */
 }
 
 .input-blocks{
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     padding: 10px;
-    /* border: 1px solid black; */
-    /* width: 100%;  */
     font-size: 4vw;
     transition: all 0.2s linear;
 }
 
 .input-blocks img{
-    /* display: none; */
+
     width: 5vw;
 }
 
@@ -237,7 +215,6 @@ option{
     position: absolute;
     top: 172vw;
     width: 95vw;
-    /* border: 2px solid white; */
 }
 
 .image-acc-time{
@@ -257,14 +234,11 @@ option{
     font-family: 'Ysabeau Infant', sans-serif;
     animation-name: wave;
     animation-iteration-count: infinite;
-    /* animation-timing-function: 1s; */
     animation-duration: 2s;
 }
-
-.statement-2 .blink{
- 
+.clock-boy{
+    display: none;
 }
-
 @keyframes wave{
     0% {
       color: transparent;
@@ -278,9 +252,6 @@ option{
   }
 
 .set-time{
-    /* border: 1px solid rgb(239, 239, 239); */
-    /* border-top: 1px solid var(--white);
-    border-bottom: 1px solid var(--white); */
     position: absolute;
     top: 258vw;
     width: 95vw;
@@ -292,8 +263,6 @@ option{
     margin: 3px 0px;
     text-align: center;
     color: white;
-    /* color: var(--gradient1); */
-    /* font-weight: 100; */
     font-family: 'Ysabeau Infant', sans-serif;
     backdrop-filter: blur(10px);
     border: 1px solid whitesmoke;
@@ -302,10 +271,8 @@ option{
 
 .set-time p:hover{
     background-color: rgba(255, 255, 255, 0.211);
-    /* color: var(--background); */
     letter-spacing: 2px;
     font-size: 3vw;
-    /* transform: scale(1.2); */
 }
 
 .set-alarm-button{
@@ -317,7 +284,6 @@ option{
     border: 2px solid transparent; 
     color: rgba(255, 255, 255, 0.873);
     font-size: 5vw;
-    /* background-image: linear-gradient(90%,red,violet); */
     background-image: linear-gradient(90deg, #6E54EC, rgba(232, 26, 255, 0.871));
     transition: all 0.2s linear;
     letter-spacing: 1px;
@@ -326,13 +292,28 @@ option{
 .set-alarm-button:hover{
     background-image: linear-gradient(90deg, #5b3eee, rgba(219, 19, 242, 0.871));
     letter-spacing: 2px;
-}
+    }
 
-.set-alarm-button span{
-    display: none;
-}
+::-webkit-scrollbar {
+    width: 10px;
+  }
 
-.set-alarm-button:hover span{
-    display: inline-block; 
-}
+  ::-webkit-scrollbar-track {
+    background: var(--background); 
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(90deg, #5b3eee, rgba(219, 19, 242, 0.871));
+    border-radius: 50%;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+     
+  }
+
+  /* .clock-boy{
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+} */

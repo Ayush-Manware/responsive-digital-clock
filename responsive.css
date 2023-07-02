@@ -1,4 +1,7 @@
-@media screen and (max-width:370px){
+@media screen and (min-width:360px) and (max-width:374px){
+    .clock-boy{
+        display: none;
+    }
     .image{
         position: absolute;
         top: 180vw;
@@ -24,66 +27,654 @@
     
 }
 
-@media screen and (min-width:820px) and (max-width:1280px){
-   
-    .logo-div{
-        padding: 2vw 2vw;
-        width: 94vw;
-        /* border-bottom: 2px solid white; */
-        box-shadow: 0px 5px 10px black;
-     }
-     
-     .logo{
-         width: 35vw; 
-         padding: 10px 0px;
-         position: sticky;
-         top: 0px;
-         z-index: 2;
-     }
-   
-    .shadowDiv-1{
-        top: 12.5vw;
-        background-color: red;
+@media screen and (min-width:375px) and (max-width:389px){
+    .image{
+       top: 178VW;
     }
 
-    .shadowDiv-2{
-        top: 10.5vw;
-    }
-
-    .clockDiv{
-        padding: 2.5%;
-        font-size: 5vw;
-        justify-content: space-evenly;
-    }
-
-    .time{
-        font-weight: bold;
-        letter-spacing: 2px;
-    }
-    
-    .hour{
-        padding: 2vw;
-    }
-    
-    .minute{
-        padding: 2vw;
-    }
-    
-    .second{
-        padding: 2vw;
-    }
-    
-    .am_pm{
-        padding: 2vw;
-        font-size: 5vw;
-    }
-
-    .shadowDiv-main{
-        top: 10%;
-        width: 96vw;
+    .main-container{
+        padding: 0vw 2vw;
     }
 
     .statement-1{
-        top: 50vw;
+        top:45vw;
     }
+
+    .set-time-container{
+        top: 67vw;
+    }
+
+    .statement-2{
+        top:244vw;
+    }
+
+    .set-time{
+        top: 261vw;
+    }
+
+    .set-alarm-button{
+        top: 302vw;
+    }
+}
+
+@media screen and (min-width:390px) and (max-width:392px){
+    .statement-1{
+        top: 45vw;
+    }
+
+    .set-time-container{
+        top: 67vw;
+    }
+
+    .image{
+        top:176vw;
+    }
+
+    .statement-2{
+        top: 241vw;
+    }
+}
+
+@media screen and (min-width:393px) and (max-width:411px){
+    .statement-1{
+        top: 43vw;
+    }
+
+    .image{
+        top: 173vw;
+    }
+
+    .statement-2{
+        top: 239vw;
+    }
+
+    .set-time{
+        top: 256vw;
+    }
+
+    .set-alarm-button{
+        top: 297vw; 
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:359px){
+    
+    .timer-animation{
+        display: none;
+    }
+    
+    .clockDiv div{
+        margin: 0px 3px;
+        font-size: 15px;
+    }
+
+    .am_pm{
+        padding-inline: 10px;
+    }
+
+    .shadowDiv-1{
+        top: 56%;
+    }
+
+    .shadowDiv-2{
+        top: 66%;
+    }
+
+    .set-time-container{
+        top: 75vw;
+    }
+
+    .image{
+        top: 210vw;
+    }
+
+    .statement-2{
+        top: 275vw;
+    }
+
+    .set-time{
+        top: 293VW;
+    }
+
+    .set-alarm-button{
+        top: 346VW;
+    }
+
+    .statement-1{
+        top: 52vw;
+    }
+}
+
+@media screen and (min-width:540px )and (max-width:767px){
+    
+    .timer-animation{
+        display: none;
+    }
+    
+    .logo{
+        width: 40vw;
+    }
+
+    .logo-div{
+        padding: 1vw 2vw;
+    }
+
+    .hour{
+        padding-inline: 10px;
+        font-size: 26px;
+    }
+
+    .minute{
+        padding-inline: 14px;
+        font-size: 26px;
+    }
+
+    .second{
+        padding-inline: 17px;
+        font-size: 26px;
+    }
+
+    .am_pm{
+        padding: 10px;
+        font-size: 38px;
+    }
+
+    .time{
+        letter-spacing: 3px;
+        font-size: 5vw;
+    }
+
+    .shadowDiv-1{
+        top: 65%;
+    }
+
+    .shadowDiv-2{
+        top: 76%;
+    }
+    .statement-1{
+        top: 51vw;
+        font-size: 6.5vw;
+        text-align: center;
+    }
+
+    .set-time-container{
+        top: 74vw;
+    }
+
+    .image{
+        top: 164vw;
+    }
+
+    .statement-2{
+        top: 229vw;
+    }
+
+    .set-time{
+        top: 247vw;
+        font-size: 22px;
+    }
+
+    .set-alarm-button{
+        top: 287vw;
+    }
+}
+
+@media screen and (min-width:768px )and (max-width:819px){
+    .logo{
+        width: 40vw;
+    }
+
+    .logo-div{
+        padding: 1vw 2vw;
+    }
+
+    .hour{
+        padding: 18px;
+        font-size: 34px;
+    }
+
+    .minute{
+        padding-inline: 20px;
+        font-size: 34px;
+    }
+
+    .second{
+        padding-inline: 19px;
+        font-size: 34px;
+    }
+
+    .am_pm{
+        padding: 12px;
+        font-size: 48px;
+    }
+
+    .time{
+        letter-spacing: 3px;
+        font-size: 5vw;
+    }
+
+    .shadowDiv-1{
+        top: 73%;
+    }
+
+    .shadowDiv-2{
+        top: 82%;
+    }
+    .statement-1{
+        top: 51vw;
+    }
+
+    .set-time-container{
+        top: 74vw;
+    }
+
+    .image{
+        top: 152vw;
+    }
+
+    .statement-2{
+        top: 218vw;
+    }
+
+    .set-time{
+        top: 237vw;
+        font-size: 28px;
+    }
+
+    .set-alarm-button{
+        top: 273vw;
+    }
+}
+
+@media screen and (min-width:820px )and (max-width:911px){
+    .logo{
+        width: 40vw;
+    }
+
+    .logo-div{
+        padding: 1vw 2vw;
+    }
+
+    .hour{
+        padding: 18px;
+        font-size: 34px;
+    }
+
+    .minute{
+        padding-inline: 20px;
+        font-size: 34px;
+    }
+
+    .second{
+        padding-inline: 19px;
+        font-size: 34px;
+    }
+
+    .am_pm{
+        padding: 12px;
+        font-size: 48px;
+    }
+
+    .time{
+        letter-spacing: 3px;
+        font-size: 5vw;
+    }
+
+    .shadowDiv-1{
+        top: 73%;
+    }
+
+    .shadowDiv-2{
+        top: 82%;
+    }
+    .statement-1{
+        top: 51vw;
+    }
+
+    .set-time-container{
+        top: 74vw;
+    }
+
+    .image{
+        top: 150vw;
+    }
+
+    .statement-2{
+        top: 215vw;
+    }
+
+    .set-time{
+        top: 232vw;
+        font-size: 32px;
+    }
+
+    .set-alarm-button{
+        top: 269vw;
+    }
+}
+
+@media screen and (min-width:912px )and (max-width:1023px){
+    
+    .main-container{
+        padding: 0px 15px;
+        /* background-color: red; */
+    }
+    
+    .logo{
+        width: 40vw;
+    }
+
+    .logo-div{
+        padding: 1vw 2vw;
+    }
+
+    .hour{
+        padding: 18px;
+        font-size: 34px;
+    }
+
+    .minute{
+        padding-inline: 20px;
+        font-size: 34px;
+    }
+
+    .second{
+        padding-inline: 19px;
+        font-size: 34px;
+    }
+
+    .am_pm{
+        padding: 12px;
+        font-size: 48px;
+    }
+
+    .time{
+        letter-spacing: 3px;
+        font-size: 5vw;
+    }
+
+    .shadowDiv-1{
+        top: 73%;
+    }
+
+    .shadowDiv-2{
+        top: 82%;
+    }
+    .statement-1{
+        top: 51vw;
+    }
+
+    .set-time-container{
+        top: 74vw;
+    }
+
+    .image{
+        top: 152vw;
+    }
+
+    .statement-2{
+        top: 218vw;
+    }
+
+    .set-time{
+        top: 237vw;
+        font-size: 28px;
+    }
+
+    .set-alarm-button{
+        top: 273vw;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .main-container{
+        padding: 0px; 
+    }
+
+    .logo-div{
+        /* position: static; */
+        /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.253); */
+        padding: 0px 15px;
+        width: 90%;
+    }
+    .logo{
+        padding: 20px 20px;
+        /* border: 1px solid white; */
+        width:150px;
+    }
+
+    .set-time-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 130px;
+        left: 50px;
+        width: 500px;
+        padding: 0px 0px;
+        /* background-color: red; */
+    }
+
+    .icon{
+        font-size: 16px;
+        justify-content: space-evenly;
+        width: 250px;
+    }
+
+    .icon img{
+        width: 30px;
+    }
+
+    .icon img:hover{
+        transform: translate(0px,-3px);
+    }
+    
+    select{
+        width: 200px;
+        font-size: 12px;
+        transition: all 0.1s linear;
+        font-family: 'Ysabeau Infant', sans-serif;
+        /* padding: 10px; */
+    }
+    
+    select:focus{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.159);
+    }
+    
+    option{
+        transition: all 0.1s linear;
+        font-family: 'Ysabeau Infant', sans-serif;
+        font-weight: 100;
+        border: none;
+    }
+    
+    .wake-up-line{
+        color: gray;
+        display: none;
+        text-align: left;
+        padding: 0px 24px;
+        /* border: 1px solid black; */
+        font-size: 20px;
+        font-family: 'Ysabeau Infant', sans-serif;
+        font-weight: 100;
+    }
+
+    .main-container-2{
+        padding: 0vw 0vw; 
+        margin: 0vw auto;
+    }
+    
+    .input-blocks{
+        padding: 0px;
+        /* border: 2PX SOLID BLACK; */
+        font-size: 16px;
+        transition: all 0.2s linear;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 500px;
+    }
+
+    .shadowDiv-main{
+        position: relative;
+        top: 0px;
+        left: 575px;
+        width: 415px;
+        padding: 10px 0px;
+        transition: all 0.2s linear;
+        z-index: 5;
+    }
+
+    .shadowDiv-main:hover{
+        transform: scale(1.05);
+        transform: translate(0px,-4px);
+    }
+
+    .clock-boy{
+        position: absolute;
+        top: 0px;
+        right: 270px;
+        width: 0px;
+        height: 0px;
+        transition: all 0.2s linear;
+        display: none;
+        /* transform: ; */
+        /* z-index: -4; */
+    }
+
+
+    .shadowDiv-main:hover .clock-boy{
+        position: absolute;
+        /* top: -150px; */
+        left: 300px;
+        width: 50px;
+        display: block;
+        z-index: -4;
+        animation-name: up;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes up{
+        0%{
+            top: 0px;
+            opacity: 0;
+        }
+        80%{
+            top: -75px;
+            opacity: 0;
+        }
+        100%{
+            top: -150px;
+            opacity: 10;
+        }
+    }
+
+    /* .timer-animation{
+        position: absolute;
+        bottom: 11px;
+        right: 320px; 
+    } */
+
+    .shadowDiv-main:hover .shadowDiv-1{
+        background-image: linear-gradient(90deg, transparent,rgb(232, 26, 255));
+        transform: translate(0px,9px);
+    } 
+
+    .shadowDiv-main:hover .shadowDiv-2{
+        background-image: linear-gradient( 90deg, rgb(232, 26, 255),transparent);
+        transform: translate(0px,10px);
+    } 
+
+    .shadowDiv-1{
+        transition: all 0.2s linear;
+        top: 50px;
+        right: 15px;
+        padding: 10px;
+        width: 360px;
+    }
+    
+    .shadowDiv-2{
+        top: 59px;
+        right: 25px;
+        padding: 10px;
+        width: 340px;
+    }
+    
+    .statement-1{
+        width: 415px;
+        padding: 10px 0px;
+        font-size: 26px;
+        top: 215px;
+        right: 80px;
+        padding: 20px 0px;
+        transition: ALL 0.2S LINEAR;
+    }
+
+    .image{
+        top: 320px;
+        right: 82px;
+        width: 410px;
+    }
+
+    .image img{
+        width: 412px;
+    }
+
+    .statement-2{
+        top: 470px;
+        left: 50px;
+        width: 480px;
+        font-size: 24px;
+        padding: 20px 10px;  
+        background-color: blueviolet;
+    }
+
+    .set-time{
+        top: 550px;
+        width: 200px;
+        left: 50px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    .set-time p{
+        width: 470px;
+        border: none;
+        text-align: center;
+        padding: 2px 10px;
+        /* border-top: 1px solid white; */
+        /* border-left: 4px solid transparent; */
+        background-image: linear-gradient(90deg,rgb(222, 57, 222), var(--background));
+        border-radius: 0px;
+        letter-spacing: 1px;
+        transition: all 0.2s linear;
+    }
+
+    .set-time p:hover{
+        /* background-image: linear-gradient( 90deg, rgb(229, 15, 253),transparent); */
+        letter-spacing: 5px;
+        /* text-align: justify; */
+        font-size: 16px;
+        border-color: white;
+        border-left: 4px solid white;
+        /* border-right: 4px solid white; */
+        border-radius: 0px;
+        /* border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; */
+    }
+
+    .set-alarm-button{
+        background-image: linear-gradient(90deg, rgba(229, 33, 251, 0.864),#1500ffea);
+        top: 595px;
+        padding: 15px;
+        /* border-radius: 10px; */
+        width: 410px;
+        font-size: 16px;
+        border: none;
+        right: 80px;
+    }
+
+   
 }

@@ -14,18 +14,25 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/078812abb6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <div class="main-container" id="main-container">
       <div class="logo-div">
         <img src="./assets/clock_logo.png" alt="#CloCk-LoGo" class="logo" />
       </div>
-      <div class="main-container-2">
+    <div class="main-container-2">
+
         <div class="shadowDiv-main">
+          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_FYx0Ph.json" class="clock-boy" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay></lottie-player>
+
           <div class="clockDiv">
+            <div>
+              <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_1VOzNcxG03.json" class="timer-animation" background="transparent"  speed="1.1"  style="width: 50px; height: 50px;"  loop autoplay></lottie-player>
+            </div>
             <div class="time">Time</div>
             <div class="hour">
-              10 <br />
+              10 <br/>
               Hour
             </div>
             <div>:</div>
@@ -35,7 +42,7 @@
             </div>
             <div>:</div>
             <div class="second">
-              01 <br />
+              00 <br />
               sec
             </div>
             <div class="am_pm">AM</div>
@@ -51,9 +58,7 @@
             <div class="input-blocks">
               <div class="icon">
                 <img src="./assets/wake_up.svg" alt="Error" />
-                <label for="wake-up" class="label-class"
-                  >&nbsp; Set wake up time</label
-                >
+                <label for="wake-up" class="label-class">&nbsp; Set wake up time &nbsp;</label>
               </div>
               <select id="wake-up" name="wake-up">
                 <option value="0">12 AM - 1 AM</option>
@@ -86,7 +91,7 @@
               <div class="icon">
                 <img src="./assets/lunch_time.svg" alt="Error" />
                 <label for="lunch-time" class="label-class">
-                  &nbsp; Set Lunch time</label
+                  &nbsp; Set Lunch time &nbsp; &nbsp;</label
                 >
               </div>
               <select id="lunch-time" name="lunch-time">
@@ -120,7 +125,7 @@
               <div class="icon">
                 <img src="./assets/nap_time.svg" alt="Error" />
                 <label for="nap-time" class="label-class"
-                  >&nbsp; Set Nap time</label
+                  >  Set Nap time &nbsp; &nbsp;  &nbsp;</label
                 >
               </div>
               <select id="nap-time" name="nap-time">
@@ -154,7 +159,7 @@
               <div class="icon">
                 <img src="./assets/nap_time.svg" alt="Error" />
                 <label for="night-time" class="label-class">
-                  &nbsp;Set Night time</label
+                  Set Night time  &nbsp; &nbsp;</label
                 >
               </div>
               <select id="night-time" name="night-time">
