@@ -307,9 +307,6 @@ option{
     border-radius: 50%;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
-     
-  }
 
   /* .clock-boy{
     position: absolute;
