@@ -69,8 +69,9 @@ setInterval(updateClock, 1000);
 function displaySelectedValue() {
     var selectElement = document.getElementById('wake-up');
     var selectedValue = selectElement.value;
-    var text = selectedValue.text;
-    document.getElementById('$wake-up-time').textContent = 'Wake Up Time ' + text;
+    // var text = selectedValue.text;
+    console.log(selectedValue)
+    // document.getElementById('$wake-up-time').textContent = 'Wake Up Time ' + text;
   }
 
 
