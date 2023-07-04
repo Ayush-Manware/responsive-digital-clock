@@ -7,23 +7,18 @@ function updateClock() {
 
   //IMage and statement-1
   if (hours >= 12 && hours < 16) {
-    document.getElementById("state1").innerHTML =
-      "Lunch Time Folks!! Stop Working";
-    document.getElementById("changeImage").src = "./assets/after12.png";
+    document.getElementById("state1").innerHTML = "Lunch Time Folks!! Stop Working";
   }
+
   if (hours >= 16 && hours < 20) {
     document.getElementById("state1").innerHTML = "Stop Yawning!! Get Some Tea";
-    document.getElementById("changeImage").src = "./assets/lunch_image.png";
   }
   if (hours >= 20 && hours < 24) {
     document.getElementById("state1").innerHTML = "Close Your Eyes & Sleep";
-    document.getElementById("changeImage").src = "./assets/goodnight_image.jpg";
   }
 
   if (hours >= 4 && hours < 12) {
     document.getElementById("state1").innerHTML = "Have Some Healthy Breakfast";
-    document.getElementById("changeImage").src =
-      "./assets/Component 30 – 1.png";
   }
 
   //am-pm
@@ -53,33 +48,75 @@ function updateClock() {
   document.getElementsByClassName(
     "second"
   )[0].innerHTML = `${seconds} <br> Sec`;
-
-  //image
-  //   let image = document.getElementsByClassName('changeImage');
-
-  //   if (hours >= 12) {
-  //     image.src = 'after12.png';
-  //   }
 }
 setInterval(updateClock, 1000);
 
+let inputValue = document.querySelectorAll("select");
+let statement2 = document.getElementById("statement-2");
+// let selectTime = document.getElementsByClassName('dropDown');
 
+function setAlarm() {
+  let time = new Date();
+  let hours = time.getHours();
 
+  let morning = inputValue[0].options[inputValue[0].value];
+  const wakeUpTime = morning.innerHTML;
 
-function displaySelectedValue() {
-    var selectElement = document.getElementById('wake-up');
-    var selectedValue = selectElement.value;
-    // var text = selectedValue.text;
-    console.log(selectedValue)
-    // document.getElementById('$wake-up-time').textContent = 'Wake Up Time ' + text;
+  let lunch = inputValue[1].options[inputValue[1].value];
+  const lunchTime = lunch.innerHTML;
+
+  let nap = inputValue[2].options[inputValue[2].value];
+  const napTime = nap.innerHTML;
+
+  let night = inputValue[3].options[inputValue[3].value];
+  const nightTime = night.innerHTML;
+
+  // Fetched value
+  document.getElementById(
+    "$wake-up-time"
+  ).innerText = `Wake Up Between ${wakeUpTime}`;
+  document.getElementById(
+    "$lunch-time"
+  ).innerText = `Have Lunch Between ${lunchTime}`;
+  document.getElementById(
+    "$nap-time"
+  ).innerText = `Have A Nap Between ${napTime}`;
+  document.getElementById(
+    "$night-time"
+  ).innerText = `Go To Bed Between ${nightTime}`;
+
+  // setting-time-functions
+  let a = morning.value;
+  console.log(a);
+  let b = lunch.value;
+  console.log(b);
+  let c = nap.value;
+  console.log(c);
+  let d = night.value;
+  console.log(d);
+
+  if (hours === parseInt(a)) {
+    document.getElementById("$statement-2").innerHTML =
+      "Good Morning Boss!! Wake Up!!";
+    document.getElementById("changeImage").src =
+    "./assets/morning.png";
   }
 
+  if (hours === parseInt(b)) {
+    document.getElementById("$statement-2").innerHTML =
+      "Good Afternoon!! Have Lunch!!";
+    document.getElementById("changeImage").src = "./assets/lunch.png";
+  }
 
+  if (hours === parseInt(c)) {
+    document.getElementById("$statement-2").innerHTML =
+      "Good Evening";
+    document.getElementById("changeImage").src = "./assets/evening.png";
+  }
 
-// function currentSetTime(){
-    // var wakeUpTime = document.getElementById('wake-up');
-    // console.log(wakeUpTime.value);
-// }
-
-// var wakeUpTime = document.querySelectorAll('option');
-// console.log(wakeUpTime);
+  if (hours === parseInt(d)) {
+    document.getElementById("$statement-2").innerHTML =
+      "Good Night";
+    document.getElementById("changeImage").src = "./assets/night.jpg";
+  }
+}

@@ -1,4 +1,8 @@
-@media screen and (min-width:360px) and (max-width:374px){
+@media screen and (min-width:360px) and (max-width:374px){ 
+    .side-line{
+        display: none;
+    }
+  
     .timer-animation{
         display: none;
     }
@@ -32,6 +36,10 @@
 }
 
 @media screen and (min-width:375px) and (max-width:389px){
+   
+    .side-line{
+        display: none;
+    }
     .timer-animation{
         display: none;
     }
@@ -66,6 +74,10 @@
 }
 
 @media screen and (min-width:390px) and (max-width:392px){
+   
+    .side-line{
+        display: none;
+    }
     .statement-1{
         top: 45vw;
     }
@@ -84,6 +96,10 @@
 }
 
 @media screen and (min-width:393px) and (max-width:411px){
+  
+    .side-line{
+        display: none;
+    }
     .statement-1{
         top: 43vw;
     }
@@ -105,8 +121,22 @@
     }
 }
 
+@media screen and (min-width:414px){
+    .side-line{
+        display: none;
+    }
+}
+
+@media screen and (min-width:412px){
+    .side-line{
+        display: none;
+    }
+}
+
 @media screen and (min-width:280px) and (max-width:359px){
-    
+    .side-line{
+        display: none;
+    }
     .timer-animation{
         display: none;
     }
@@ -155,6 +185,10 @@
 
 @media screen and (min-width:540px )and (max-width:767px){
     
+    .side-line{
+        display: none;
+    }
+
     .timer-animation{
         display: none;
     }
@@ -228,6 +262,11 @@
 }
 
 @media screen and (min-width:768px )and (max-width:819px){
+    
+    .side-line{
+        display: none;
+    }
+
     .logo{
         width: 40vw;
     }
@@ -295,6 +334,11 @@
 }
 
 @media screen and (min-width:820px )and (max-width:911px){
+    
+    .side-line{
+        display: none;
+    }
+
     .timer-animation{
         display: none;
     }
@@ -365,7 +409,7 @@
     }
 }
 
-@media screen and (min-width:912px )and (max-width:1023px){
+@media screen and (min-width:912px )and (max-width:1000px){
     
     .main-container{
         padding: 0px 15px;
@@ -438,7 +482,7 @@
     }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1001px){
 
     .main-container{
         padding: 0px; 
@@ -687,6 +731,23 @@
         border: none;
         right: 80px;
     }
+
+    .side-line{
+        position: fixed;
+        top: 20vw;
+        right: -105px;
+        padding: 20px;
+        opacity: 50%;
+        background: -webkit-linear-gradient(#ffffff, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform:rotate(-90deg);
+        width: fit-content;
+    }
+
+    /* .side-line:hover{
+        opacity: 90%;
+    } */
 
    
 }
