@@ -53,7 +53,6 @@ setInterval(updateClock, 1000);
 
 let inputValue = document.querySelectorAll("select");
 let statement2 = document.getElementById("statement-2");
-// let selectTime = document.getElementsByClassName('dropDown');
 
 function setAlarm() {
   let time = new Date();
