@@ -6,6 +6,10 @@ function updateClock() {
   var session = "";
 
   //IMage and statement-1
+  if (hours >= 4 && hours < 12) {
+    document.getElementById("state1").innerHTML = "Have Some Healthy Breakfast";
+  }
+
   if (hours >= 12 && hours < 16) {
     document.getElementById("state1").innerHTML = "Lunch Time Folks!! Stop Working";
   }
@@ -15,10 +19,6 @@ function updateClock() {
   }
   if (hours >= 20 && hours < 24) {
     document.getElementById("state1").innerHTML = "Close Your Eyes & Sleep";
-  }
-
-  if (hours >= 4 && hours < 12) {
-    document.getElementById("state1").innerHTML = "Have Some Healthy Breakfast";
   }
 
   //am-pm
@@ -40,14 +40,10 @@ function updateClock() {
   document.getElementsByClassName("hour")[0].innerHTML = `${hours} <br> Hour`;
 
   minutes = minutes < 10 ? "0" + minutes : minutes;
-  document.getElementsByClassName(
-    "minute"
-  )[0].innerHTML = `${minutes} <br> Min`;
+  document.getElementsByClassName("minute")[0].innerHTML = `${minutes} <br> Min`;
 
   seconds = seconds < 10 ? "0" + seconds : seconds;
-  document.getElementsByClassName(
-    "second"
-  )[0].innerHTML = `${seconds} <br> Sec`;
+  document.getElementsByClassName("second")[0].innerHTML = `${seconds} <br> Sec`;
 }
 setInterval(updateClock, 1000);
 
@@ -71,18 +67,10 @@ function setAlarm() {
   const nightTime = night.innerHTML;
 
   // Fetched value
-  document.getElementById(
-    "$wake-up-time"
-  ).innerText = `Wake Up Between ${wakeUpTime}`;
-  document.getElementById(
-    "$lunch-time"
-  ).innerText = `Have Lunch Between ${lunchTime}`;
-  document.getElementById(
-    "$nap-time"
-  ).innerText = `Have A Nap Between ${napTime}`;
-  document.getElementById(
-    "$night-time"
-  ).innerText = `Go To Bed Between ${nightTime}`;
+  document.getElementById("$wake-up-time").innerText = `Wake Up Between ${wakeUpTime}`;
+  document.getElementById("$lunch-time").innerText = `Have Lunch Between ${lunchTime}`;
+  document.getElementById("$nap-time").innerText = `Have A Nap Between ${napTime}`;
+  document.getElementById("$night-time").innerText = `Go To Bed Between ${nightTime}`;
 
   // setting-time-functions
   let a = morning.value;
@@ -95,27 +83,22 @@ function setAlarm() {
   console.log(d);
 
   if (hours === parseInt(a)) {
-    document.getElementById("$statement-2").innerHTML =
-      "Good Morning Boss!! Wake Up!!";
-    document.getElementById("changeImage").src =
-    "./assets/morning.png";
+    document.getElementById("$statement-2").innerHTML = "Good Morning Boss!! Wake Up!!";
+    document.getElementById("changeImage").src = "./assets/morning.png";
   }
 
   if (hours === parseInt(b)) {
-    document.getElementById("$statement-2").innerHTML =
-      "Good Afternoon!! Have Lunch!!";
+    document.getElementById("$statement-2").innerHTML ="Good Afternoon!! Have Lunch!!";
     document.getElementById("changeImage").src = "./assets/lunch.png";
   }
 
   if (hours === parseInt(c)) {
-    document.getElementById("$statement-2").innerHTML =
-      "Good Evening";
+    document.getElementById("$statement-2").innerHTML ="Good Evening";
     document.getElementById("changeImage").src = "./assets/evening.png";
   }
 
   if (hours === parseInt(d)) {
-    document.getElementById("$statement-2").innerHTML =
-      "Good Night";
+    document.getElementById("$statement-2").innerHTML ="Good Night";
     document.getElementById("changeImage").src = "./assets/night.jpg";
   }
 }

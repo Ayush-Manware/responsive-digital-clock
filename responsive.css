@@ -409,7 +409,7 @@
     }
 }
 
-@media screen and (min-width:912px )and (max-width:1000px){
+@media screen and (min-width:912px )and (max-width:1023px){
     
     .main-container{
         padding: 0px 15px;
@@ -482,7 +482,7 @@
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1280px){
+@media screen and (min-width:1024px) and (max-width:1255px){
 
     .main-container{
         padding: 0px; 
@@ -587,7 +587,7 @@
     .shadowDiv-main{
         position: relative;
         top: 0px;
-        left: 575px;
+        left: 56%;
         width: 415px;
         padding: 10px 0px;
         transition: all 0.2s linear;
@@ -693,7 +693,7 @@
     }
 
     .statement-2{
-        top: 470px;
+        top: 45VW;
         left: 50px;
         width: 480px;
         font-size: 24px;
@@ -702,7 +702,7 @@
     }
 
     .set-time{
-        top: 550px;
+        top: 53vw;
         /* width: 200px; */
         left: 50px;
         padding: 0px;
@@ -760,7 +760,7 @@
    
 }
 
-@media screen and (min-width:1025px) and (max-width:1280px){
+ @media screen and (min-width:1056px) and (max-width:1280px){
 
     .main-container{
         padding: 0px; 
@@ -780,7 +780,7 @@
         justify-content: space-around;
         align-items: center;
         top: 130px;
-        left: 110px;
+        left: 5vw;
         width: 560px;
         padding: 0px 0px;
     }
@@ -854,11 +854,16 @@
     .shadowDiv-main{
         position: relative;
         top: 0px;
-        left: 750px;
-        width: 415px;
+        left: 58vw;
         padding: 10px 0px;
         transition: all 0.2s linear;
         z-index: 5;
+    }
+
+    .clockDiv{
+        position: absolute;
+        top: -10px;
+        padding: 20px;
     }
 
     .shadowDiv-main:hover{
@@ -914,12 +919,6 @@
         transform: translate(0px,10px);
     } 
 
-    .clockDiv{
-        padding: 5%;
-        position: absolute;
-        top: -10px;
-        width: 420px;
-    }
 
     .time{
         font-size: 20px;
@@ -947,7 +946,6 @@
         padding: 10px;
         left: 20px;
         width: 407px;
-        /* background-color: red; */
     }
     
     .shadowDiv-2{
@@ -980,7 +978,7 @@
 
     .statement-2{
         top: 513px;
-        left: 110px;
+        left: 5vw;
         width: 540px;
         font-size: 32px;
         padding: 20px 10px;  
@@ -989,7 +987,7 @@
 
     .set-time{
         top: 603px;
-        left: 110px;
+        left: 5vw;
         padding: 0px;
         border-radius: 0px;
     }
@@ -1034,8 +1032,4 @@
         width: fit-content;
     }
 
-    /* .side-line:hover{
-        opacity: 90%;
-    } */
-
-}
+} */
