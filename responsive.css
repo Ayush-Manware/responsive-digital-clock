@@ -334,7 +334,7 @@
 }
 
 @media screen and (min-width:820px )and (max-width:911px){
-    
+   
     .side-line{
         display: none;
     }
@@ -409,8 +409,10 @@
     }
 }
 
-@media screen and (min-width:912px )and (max-width:1024px){
+@media screen and (min-width:912px )and (max-width:1023px){
     
+  
+
     .main-container{
         padding: 0px 15px;
         /* background-color: red; */
@@ -482,21 +484,18 @@
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1280px){
+@media screen and (min-width:1024px) and (max-width:1279px){
 
     .main-container{
         padding: 0px; 
     }
 
     .logo-div{
-        /* position: static; */
-        /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.253); */
         padding: 0px 15px;
         width: 90%;
     }
     .logo{
         padding: 20px 20px;
-        /* border: 1px solid white; */
         width:150px;
     }
 
@@ -508,7 +507,6 @@
         left: 50px;
         width: 500px;
         padding: 0px 0px;
-        /* background-color: red; */
     }
 
     .icon{
@@ -516,10 +514,6 @@
         justify-content: space-evenly;
         width: 250px;
     }
-/* 
-    .icon img{
-        width: 30px;
-    } */
 
     .icon .icon_image{
         width: 30px;
@@ -538,7 +532,6 @@
         font-size: 12px;
         transition: all 0.1s linear;
         font-family: 'Ysabeau Infant', sans-serif;
-        /* padding: 10px; */
     }
     
     select:hover{
@@ -562,7 +555,6 @@
         display: none;
         text-align: left;
         padding: 0px 24px;
-        /* border: 1px solid black; */
         font-size: 20px;
         font-family: 'Ysabeau Infant', sans-serif;
         font-weight: 100;
@@ -575,7 +567,6 @@
     
     .input-blocks{
         padding: 0px;
-        /* border: 2PX SOLID BLACK; */
         font-size: 16px;
         transition: all 0.2s linear;
         display: flex;
@@ -584,14 +575,22 @@
         width: 500px;
     }
 
+    .clockDiv{
+        padding: 20px;
+    }
+
+    .clockDiv div{
+        font-size: 19px;
+    }
+
     .shadowDiv-main{
         position: absolute;
-    top: 80px;
-    right: 3%;
+        top: 74px;
+        right: 3%;
         width: 415px;
         padding: 10px 0px;
         transition: all 0.2s linear;
-        z-index: 5;
+        z-index: 3;
     }
 
     .shadowDiv-main:hover{
@@ -640,15 +639,9 @@
         }
     }
 
-    /* .timer-animation{
-        position: absolute;
-        bottom: 11px;
-        right: 320px; 
-    } */
-
     .shadowDiv-main:hover .shadowDiv-1{
         background-image: linear-gradient(90deg, transparent,rgb(232, 26, 255));
-        transform: translate(0px,9px);
+        transform: translate(0px,5px);
     } 
 
     .shadowDiv-main:hover .shadowDiv-2{
@@ -658,14 +651,14 @@
 
     .shadowDiv-1{
         transition: all 0.2s linear;
-        top: 50px;
+        top: 80px;
         right: 15px;
         padding: 10px;
         width: 360px;
     }
     
     .shadowDiv-2{
-        top: 59px;
+        top: 89px;
         right: 25px;
         padding: 10px;
         width: 340px;

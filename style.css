@@ -9,6 +9,10 @@
     font-family: 'Roboto Slab', serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 :root{
     --background: #3D087B;
     --white: #FFFFFF;
